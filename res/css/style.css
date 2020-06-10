@@ -1,0 +1,159 @@
+@font-face {
+	font-family: Roboto;
+	src: url(../font/Roboto-Regular.ttf);
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url(../font/Roboto-Bold.ttf);
+	font-weight: bold;
+}
+
+* {
+	box-sizing: border-box;
+	text-decoration: none;
+	outline: none !important;
+}
+
+body {
+	padding: 80px 0 30px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	line-height: 1.5em;
+	color: #424242;
+}
+
+h1 {
+	font-size: 28px;
+}
+
+h2 {
+	font-size: 22px;
+}
+
+p:empty {
+	display: none;
+}
+
+hr {
+	clear: both;
+	margin: 15px 0;
+}
+
+select {
+	cursor: pointer;
+}
+
+.row+hr {
+	margin-top: 5px;
+}
+
+.navbar-brand {
+	padding: 10px 15px;
+}
+
+.navbar-brand img {
+	display: inline;
+	height: 30px;
+}
+
+.navbar-brand span {
+	height: 30px;
+	padding-left: 5px;
+	line-height: 30px;
+}
+
+.btn-group-xs>.btn, .btn-xs {
+	font-size: 11px;
+}
+
+.page-header {
+	margin-top: 0;
+}
+
+.pagination {
+	margin: 0 0 20px;
+}
+
+.info-cetak {
+	margin-bottom: 20px;
+}
+
+.page-info {
+	font-size: 85%;
+	text-align: right;
+	color: #aaa;
+}
+
+.copyright {
+	font-size: 85%;
+	color: #aaa;
+}
+
+.print-logo img {
+	max-height: 2.8cm;
+}
+
+.alert {
+	position: fixed;
+	right: 15px;
+	bottom: 15px;
+	z-index: 25;
+	margin: 0;
+	box-shadow: 0 0 10px #ddd;
+}
+
+.thumbnail {
+	margin-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+	.form-group .col-sm-6+.col-sm-6 {
+		margin-top: 15px;
+	}
+}
+
+@media (min-width: 768px) {
+	.thumbnail {
+		height: 212px;
+	}
+}
+
+@media (min-width: 992px) {
+	.page-info {
+		text-align: left;
+	}
+}
+
+@media print {
+	body {
+		padding: 0;
+		font-size: 10pt;
+	}
+
+	h1 small {
+		opacity: .5;
+	}
+
+	.container {
+		width: 100%;
+	}
+
+	.print-logo {
+		float: left;
+		width: 18%;
+		margin-right: 2%;
+	}
+
+	.print-50 {
+		float: left;
+		width: 38%;
+	}
+
+	.print-date {
+		float: right;
+		width: 80%;
+		opacity: .5;
+	}
+}
